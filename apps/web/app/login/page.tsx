@@ -84,6 +84,15 @@ export default function LoginPage() {
           <Button className="w-full" disabled={isSubmitting}>
             {isSubmitting ? 'Validating…' : 'Continue'}
           </Button>
+          <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-950">
+            <p className="font-semibold">Portfolio demo access</p>
+            <p className="mt-1 text-xs text-emerald-800">
+              Use this bearer token above to log in:
+            </p>
+            <code className="mt-2 block break-all rounded bg-white px-2 py-1.5 text-xs ring-1 ring-emerald-200 select-all">
+              tSHglvS-zoD2FzPYOMXGzQDXwwoNmpaVQfMRDBfatSDvjXxF
+            </code>
+          </div>
         </form>
       </Card>
     </main>
